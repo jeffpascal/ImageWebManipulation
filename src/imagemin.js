@@ -15,7 +15,7 @@ async function test(){
                   quality: 80
                   ,
                   resize: {
-                    width: 1000,
+                    width: 1500,
                     height: 0
                   }
               }),
