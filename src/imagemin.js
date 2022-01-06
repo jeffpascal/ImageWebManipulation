@@ -4,7 +4,7 @@ import imageminPngquant from 'imagemin-pngquant';
 import imageminWebp from 'imagemin-webp';
 
 async function test(){
-    const files = await imagemin(['./imagesToCompress/*.{jpg,png}'], {
+    const files = await imagemin(['./imagesToCompress/*.{jpg,png,jpeg}'], {
         destination: './images',
         plugins: [
             imageminJpegtran(),
@@ -12,12 +12,12 @@ async function test(){
             //     quality: [0.4, 0.7]
             // }),
             imageminWebp({
-                //   quality: 90
-                //   ,
-                //   resize: {
-                //     width: 1000,
-                //     height: 0
-                //   }
+                  quality: 80
+                  ,
+                  resize: {
+                    width: 1000,
+                    height: 0
+                  }
               }),
         ]
     });

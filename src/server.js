@@ -1,4 +1,4 @@
-const sharp = require('sharp');
+import sharp  from 'sharp';
 
 
 //read image from disk
