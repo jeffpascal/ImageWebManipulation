@@ -12,10 +12,10 @@ async function test(){
             //     quality: [0.4, 0.7]
             // }),
             imageminWebp({
-                  quality: 80
+                  quality: 90
                   ,
                   resize: {
-                    width: 1500,
+                    width: 1400,
                     height: 0
                   }
               }),
